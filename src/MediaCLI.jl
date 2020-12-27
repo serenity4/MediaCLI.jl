@@ -1,5 +1,15 @@
 module MediaCLI
+    include("transfer.jl")
+    include("deflate.jl")
 
-# Write your package code here.
-
+    export
+            MediaConfig,
+            Episode,
+            Season,
+            TVShow,
+            transfer,
+            deflate,
+            discover_episodes,
+            discover_seasons,
+            plex_denomination
 end
