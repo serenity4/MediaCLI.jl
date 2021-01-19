@@ -17,10 +17,6 @@ function parse_cli()
             help = "tv show name"
             required = true
             arg_type = String
-        "-s", "--seasons"
-            help = "seasons"
-            arg_type = String
-            default = "1"
         "--source"
             help = "source files path. Must be the folder containing the season folders."
             default = pwd()
@@ -29,7 +25,7 @@ function parse_cli()
             action = :store_true
         "-m", "--media-storage"
             help = "location where to store the media"
-            default = "/media/belmant/WD Elements"
+            default = "/media/belmant/wd_elements"
     end
 
     @add_arg_table s["deflate"] begin
